@@ -46,34 +46,15 @@ nav a{
 }
 
 /* ===== HERO BANNER (FIXED 100%) ===== */
-.hero-banner {
-  width: 100%;
-  height: 420px;
-  overflow: hidden;
-  position: relative;
-
-  /* مهم: این باعث میشه بنر خالی نباشه */
-  background: #fff;
+.hero-banner{
+  width:100%;
+  background:#fff;
 }
 
-/* تصویر به عنوان بک‌گراند واقعی */
-.hero-banner img {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;        /* پر کردن کامل */
-  object-position: center;  /* وسط */
-}
-
-/* موبایل */
-@media (max-width: 768px) {
-  .hero-banner {
-    height: 240px;
-  }
+.hero-banner img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 
 /* ===== SECTIONS ===== */
