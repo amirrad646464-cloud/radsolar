@@ -51,24 +51,21 @@ nav a{
   height: 420px;
   overflow: hidden;
   position: relative;
-  background: #fff; /* حاشیه سفید به جای مشکی */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #fff;
 }
 
 .hero-banner img {
   width: 100%;
   height: 100%;
-  object-fit: contain;   /* کل تصویر دیده میشه */
-  object-position: center;
+  object-fit: cover;        /* مهم: دیگه کوچیک نمی‌شود */
+  object-position: center;  /* وسط تصویر حفظ می‌شود */
   display: block;
 }
 
 /* موبایل */
 @media (max-width: 768px) {
   .hero-banner {
-    height: 220px;
+    height: 240px;
   }
 }
 
