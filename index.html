@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,38 +10,14 @@ body{
     font-family:tahoma,sans-serif;
     margin:0;
     padding:0;
-    background:#f5f5f5;
+    background:#F8F9FA;
+    color:#333;
     line-height:1.8;
-}
-
-/* منو حرفه‌ای */
-nav{
-    background:#0f4c81;
-    padding:12px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,0.15);
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:12px;
-    font-weight:500;
-    padding:6px 10px;
-    border-radius:6px;
-    transition:0.3s;
-}
-
-nav a:hover{
-    background:#ffffff20;
 }
 
 /* هدر */
 header{
-    background:#0f4c81;
+    background:#0B2E6B;
     color:white;
     text-align:center;
     padding:60px 20px;
@@ -50,141 +25,362 @@ header{
 
 header h1{
     margin:0;
-    font-size:42px;
+    font-size:40px;
 }
 
 header p{
-    font-size:18px;
-    opacity:0.9;
+    font-size:20px;
 }
 
 /* سکشن‌ها */
 section{
-    padding:40px 10%;
+    padding:40px 6%;
     background:white;
     margin:20px;
     border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
 /* تیترها */
 h2{
-    color:#0f4c81;
+    color:#0B2E6B;
     text-align:center;
-    font-size:30px;
+    font-size:32px;
     margin-bottom:25px;
+    position:relative;
 }
 
-/* خدمات */
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:15px;
+h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#D4AF37;
+    margin:10px auto 0;
+    border-radius:5px;
 }
 
+/* باکس‌ها */
 .box{
-    background:#eef5fb;
-    padding:15px;
-    border-radius:10px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
     transition:0.3s;
+    border-top:4px solid #D4AF37;
 }
 
 .box:hover{
     transform:translateY(-5px);
-    background:#e3f0ff;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 /* فوتر */
 footer{
-    background:#0f4c81;
+    background:#0B2E6B;
     color:white;
     text-align:center;
     padding:20px;
     margin-top:30px;
 }
 
-/* دکمه مشاوره */
-.cta{
-    background:#d4af37;
-    color:black;
-    padding:10px 15px;
-    border-radius:8px;
-    font-weight:bold;
+/* اسکرول نرم برای منو */
+html{
+    scroll-behavior:smooth;
 }
 </style>
-
 </head>
 
 <body>
+<nav style="
+background:#0B2E6B;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.15);
+">
 
-<!-- منو -->
-<nav>
-<a href="#about">درباره ما</a>
-<a href="#services">خدمات</a>
-<a href="#benefits">مزایا</a>
-<a href="#equipment">تجهیزات</a>
-<a href="#contact">تماس با ما</a>
-<a href="#contact" class="cta">مشاوره رایگان</a>
+<a href="#" style="color:white;text-decoration:none;margin:15px;font-weight:bold;">خانه</a>
+
+<a href="#about" style="color:white;text-decoration:none;margin:15px;">درباره ما</a>
+
+<a href="#services" style="color:white;text-decoration:none;margin:15px;">خدمات</a>
+
+<a href="#projects" style="color:white;text-decoration:none;margin:15px;">نمونه پروژه‌ها</a>
+
+<a href="#contact" style="color:white;text-decoration:none;margin:15px;">تماس با ما</a>
+
 </nav>
-
-<!-- هدر -->
 <header>
-<h1>راد سولار</h1>
-<p>راهکارهای نوین انرژی خورشیدی برای خانه، صنعت و کشاورزی</p>
+<img src="banner.jpg.png" alt="راد سولار" style="width:100%;display:block;">
 </header>
 
-<!-- درباره -->
 <section id="about">
 <h2>درباره ما</h2>
-<p>بازرگانی راد با سال‌ها تجربه در زمینه طراحی، تأمین تجهیزات و اجرای پروژه‌های انرژی خورشیدی فعالیت می‌کند.</p>
+<p>
+بازرگانی راد با سال‌ها تجربه در زمینه طراحی، تأمین تجهیزات و اجرای پروژه‌های انرژی خورشیدی،
+خدمات تخصصی خود را در سراسر ایران ارائه می‌دهد. هدف ما کمک به کاهش هزینه‌های برق،
+افزایش بهره‌وری انرژی و توسعه استفاده از انرژی‌های تجدیدپذیر است.
+</p>
 </section>
 
-<!-- خدمات -->
 <section id="services">
+
 <h2>خدمات ما</h2>
+
+<img src="installer.jpg.jpg"
+style="width:100%;max-width:700px;display:block;margin:20px auto;border-radius:15px;">
+
+<p style="text-align:center;color:#666;">
+اجرای تخصصی و نصب سیستم‌های خورشیدی توسط تیم فنی راد سولار
+</p>
+
 <div class="services">
-<div class="box">طراحی نیروگاه خورشیدی متصل به شبکه</div>
-<div class="box">سیستم خورشیدی مستقل (Off Grid)</div>
-<div class="box">فروش تجهیزات خورشیدی</div>
-<div class="box">اجرای پروژه‌های صنعتی و خانگی</div>
+
+<div class="box">
+...
+
+<div class="services">
+
+<div class="box">
+<h3>☀️ نیروگاه متصل به شبکه</h3>
+<p>طراحی و اجرای نیروگاه‌های خورشیدی خانگی، تجاری و صنعتی</p>
 </div>
+
+<div class="box">
+<h3>🔋 سیستم آف‌گرید</h3>
+<p>برق مستقل برای ویلا، باغ و مناطق فاقد برق</p>
+</div>
+
+<div class="box">
+<h3>⚡️ فروش پنل خورشیدی</h3>
+<p>تأمین انواع پنل‌های خورشیدی با گارانتی معتبر</p>
+</div>
+
+<div class="box">
+<h3>🔧 تعمیر و نگهداری</h3>
+<p>عیب‌یابی و سرویس دوره‌ای نیروگاه‌های خورشیدی</p>
+</div>
+
+<div class="box">
+<h3>🏭 پروژه‌های صنعتی</h3>
+<p>اجرای نیروگاه‌های خورشیدی صنعتی و کشاورزی</p>
+</div>
+
+<div class="box">
+<h3>💰 مشاوره سرمایه‌گذاری</h3>
+<p>بررسی سودآوری و بازگشت سرمایه نیروگاه خورشیدی</p>
+</div>
+
+<div class="box">✅ طراحی و اجرای نیروگاه خورشیدی مستقل از شبکه (آف‌گرید)</div>
+
+<div class="box">✅ فروش پنل خورشیدی با کیفیت بالا</div>
+
+<div class="box">✅ تأمین اینورتر خورشیدی و تجهیزات جانبی</div>
+
+<div class="box">✅ اجرای سیستم برق خورشیدی برای ویلا و باغ</div>
+
+<div class="box">✅ مشاوره سرمایه‌گذاری در نیروگاه‌های خورشیدی</div>
+
+<div class="box">✅ تعمیر و نگهداری سیستم‌های خورشیدی</div>
+
+<div class="box">✅ اجرای پروژه‌های خورشیدی صنعتی و کشاورزی</div>
+
+</div>
+
 </section>
 
-<!-- مزایا -->
-<section id="benefits">
+<section>
 <h2>چرا انرژی خورشیدی؟</h2>
+
 <ul>
 <li>کاهش هزینه برق</li>
 <li>بازگشت سرمایه مناسب</li>
 <li>افزایش ارزش ملک</li>
-<li>دوستدار محیط زیست</li>
+<li>کاهش آلودگی محیط زیست</li>
+<li>بهره‌برداری طولانی‌مدت</li>
+<li>نیاز کم به نگهداری</li>
 </ul>
-</section>
 
-<!-- تجهیزات -->
-<section id="equipment">
+</section>
+<section>
 <h2>تجهیزات خورشیدی</h2>
+
 <ul>
 <li>پنل خورشیدی</li>
-<li>اینورتر</li>
-<li>باتری</li>
+<li>اینورتر خورشیدی</li>
+<li>باتری خورشیدی</li>
 <li>شارژ کنترلر</li>
+<li>سازه نصب پنل</li>
+<li>کابل و اتصالات تخصصی خورشیدی</li>
 </ul>
+
 </section>
 
-<!-- تماس -->
+<h2>چرا راد سولار؟</h2>
+
+<div class="services">
+
+<div class="box">☀️ تجربه در پروژه‌های خورشیدی</div>
+
+<div class="box">🔋 تجهیزات باکیفیت و استاندارد</div>
+
+<div class="box">⚡️ اجرای حرفه‌ای و سریع</div>
+
+<div class="box">🛠 پشتیبانی و خدمات پس از فروش</div>
+
+</div>
+
+</section>
+  <section>
+
+<h2>نمونه پروژه‌ها</h2>
+<img src="solar-farm.png"
+style="
+width:100%;
+height:500px;
+object-fit:cover;
+display:block;
+margin:20px auto;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+">
+<p style="text-align:center;color:#666;">
+طراحی و اجرای نیروگاه‌های خورشیدی صنعتی و مقیاس بزرگ
+</p>
+<img src="solar-car.jpg"
+style="
+width:100%;
+height:550px;
+object-fit:cover;
+display:block;
+margin:20px auto;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+">
+
+<p style="text-align:center;color:#666;">
+سایبان خورشیدی و ایستگاه شارژ خودرو برقی
+</p>
+
+<img src="solar-home.jpg"
+style="
+width:100%;
+height:500px;
+object-fit:cover;
+display:block;
+margin:20px auto;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+">
+<p style="text-align:center;color:#666;">
+سیستم خورشیدی خانگی و ویلایی
+</p>
+
+<div class="services">
+<div class="box">
+<h3>☀️ نیروگاه خورشیدی خانگی</h3>
+<p>طراحی و اجرای سیستم خورشیدی برای منازل و ویلاها</p>
+</div>
+
+<div class="box">
+<h3>🏭 نیروگاه صنعتی</h3>
+<p>اجرای پروژه‌های خورشیدی برای کارخانه‌ها و صنایع</p>
+</div>
+
+<div class="box">
+<h3>🚜 پروژه کشاورزی</h3>
+<p>تأمین برق چاه‌ها و تجهیزات کشاورزی با انرژی خورشیدی</p>
+</div>
+
+</div>
+<section>
+
+<h2>درخواست مشاوره رایگان</h2>
+
+<div class="box" style="text-align:center;">
+
+<p>
+برای طراحی نیروگاه خورشیدی، استعلام قیمت پنل خورشیدی و مشاوره سرمایه‌گذاری با ما در ارتباط باشید.
+</p>
+
+<a href="tel:09120835850"
+style="background:#0B2E6B;color:white;padding:12px 25px;text-decoration:none;border-radius:8px;display:inline-block;margin:5px;">
+📞 تماس با کارشناس
+</a>
+
+<a href="https://wa.me/989911835850"
+style="background:#25D366;color:white;padding:12px 25px;text-decoration:none;border-radius:8px;display:inline-block;margin:5px;">
+💬 مشاوره در واتساپ
+</a>
+
+</div>
+
+</section>
+</section>
 <section id="contact">
-<h2>تماس با ما</h2>
-<p>📞 04433441078</p>
-<p>📱 09120835850</p>
-<p>📱 09911835850</p>
-<p>📧 radpourengco1@gmail.com</p>
+<h2>تماس با ما و دریافت مشاوره رایگان</h2>
+<div style="text-align:center;margin-bottom:30px;">
+
+<a href="tel:09120835850" style="background:#0B2E6B;color:white;padding:12px 25px;text-decoration:none;border-radius:8px;margin:5px;display:inline-block;">
+📞 تماس مستقیم
+</a>
+
+<a href="https://wa.me/989120835850" style="background:#25D366;color:white;padding:12px 25px;text-decoration:none;border-radius:8px;margin:5px;display:inline-block;">
+💬 واتساپ
+</a>
+
+</div>
+<p>
+دفتر تهران: جردن، عاطفی شرقی، پلاک ۴، واحد ۱۰۱
+</p>
+
+<p>
+دفتر ارومیه: میدان ایالت، روبروی استانداری، کوچه نعمتی، روبروی شورای شهر
+</p>
+
+<p>
+تلفن: 04433441078
+</p>
+
+<p>
+موبایل: 09120835850
+</p>
+
+<p>
+موبایل: 09911835850
+</p>
+
+<p>
+موبایل: 09198843600
+</p>
+
+<p>
+ایمیل: radpourengco1@gmail.com
+</p>
+
+<p>
+اینستاگرام: rad.eng.co
+</p>
+
 </section>
 
-<!-- فوتر -->
 <footer>
-© 2025 Rad Solar
+© Rad Solar - All Rights Reserved
 </footer>
-
+<a href="https://wa.me/989911835850"
+style="
+position:fixed;
+bottom:20px;
+left:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+z-index:9999;
+">
+💬 واتساپ
+</a>
 </body>
 </html>
